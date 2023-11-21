@@ -8,9 +8,12 @@ import 'package:shoe_project_app/routes/app_route_constant.dart';
 import 'package:shoe_project_app/routes/app_routes.dart';
 import 'package:shoe_project_app/utils/reponsive/size_config.dart';
 
+import 'utils/theme/app_theme_util.dart';
+
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
   var getMaterialApp = GetMaterialApp(
     supportedLocales: [
       Locale('en', 'US'),

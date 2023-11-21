@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:shoe_project_app/utils/reponsive/size_config.dart';
+import 'package:shoe_project_app/utils/theme/app_theme_util.dart';
+import 'package:shoe_project_app/utils/theme/base_theme_data.dart';
 
 extension ThemeExtension on BuildContext {
-  // BaseAppTheme get currentTheme => MainAppPage.of(this).themeUtil.appTheme;
+  ThemeData get theme => Theme.of(this);
 
-  // ThemeData get theme => Theme.of(this);
-
-  // BaseThemeData get appTheme => MainAppPage.of(this).themeUtil.getAppTheme();
-
-  // AppThemeUtil get themeUtil => MainAppPage.of(this).themeUtil;
+  BaseThemeData get appTheme => AppThemeUtil.instance.getAppTheme();
 
   double? width(double? width) => SizeConfig.instance.getWidth(width);
 
