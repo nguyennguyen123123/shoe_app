@@ -41,6 +41,8 @@ dependencies:
   flutter_svg: ^1.1.6
   cached_network_image: ^3.2.3
   flutter_native_splash: ^2.2.18
+  flutter_easyloading: ^3.0.5
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
